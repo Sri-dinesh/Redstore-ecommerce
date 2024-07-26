@@ -198,14 +198,17 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
                 <img src="images/buy-1.jpg" alt="Shirt" />
                 <div>
                   <p>Red Printed T-Shirt</p>
-                  <small>Price: $50.00</small>
+                  <small>Price: $25.00</small>
                   <br />
-                  <a href="">Remove</a>
+                  <!-- <a href="">Remove</a> -->
+                  <button class="button" onclick="removeFromCart(1)">
+                    Remove
+                  </button>
                 </div>
               </div>
             </td>
             <td><input type="number" value="1" /></td>
-            <td>$50.00</td>
+            <td>$25.00</td>
           </tr>
           <tr>
             <td>
@@ -215,7 +218,8 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
                   <p>SM Running shoe</p>
                   <small>Price: $50.00</small>
                   <br />
-                  <a href="">Remove</a>
+                  <!-- <a href="">Remove</a> -->
+                  <button onclick="removeFromCart(1)">Remove</button>
                 </div>
               </div>
             </td>
@@ -227,15 +231,16 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
               <div class="cart-info">
                 <img src="images/buy-3.jpg" alt="trousers" />
                 <div>
-                  <p>Black Trouser</p>
-                  <small>Price: $50.00</small>
+                  <p>Light Gray Trouser</p>
+                  <small>Price: $20.00</small>
                   <br />
-                  <a href="">Remove</a>
+                  <!-- <a href="">Remove</a> -->
+                  <button onclick="removeFromCart(1)">Remove</button>
                 </div>
               </div>
             </td>
             <td><input type="number" value="1" /></td>
-            <td>$50.00</td>
+            <td>$20.00</td>
           </tr>
           <tr>
             <td>
@@ -245,7 +250,8 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
                   <p>Smart Band 4</p>
                   <small>Price: $90.00</small>
                   <br />
-                  <a href="">Remove</a>
+                  <!-- <a href="">Remove</a> -->
+                  <button onclick="removeFromCart(1)">Remove</button>
                 </div>
               </div>
             </td>
@@ -258,15 +264,15 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
           <table>
             <tr>
               <td>Subtotal</td>
-              <td>$240.00</td>
+              <td>$185.00</td>
             </tr>
             <tr>
               <td>Tax</td>
-              <td>$35.00</td>
+              <td>$5.00</td>
             </tr>
             <tr>
               <td>Total</td>
-              <td>$275.00</td>
+              <td>$190.00</td>
             </tr>
           </table>
         </div>
@@ -322,5 +328,6 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
     </footer>
 
     <script src="script.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>

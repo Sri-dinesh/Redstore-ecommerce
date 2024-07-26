@@ -155,3 +155,33 @@ app.post("/register", async (req, res) => {
     res.status(500).json({ message: "Error creating user" });
   }
 });
+
+//remove product
+
+// Function to remove a product from the cart by its id// Sample cart array
+let cart = [{ id: 1, name: "Light Gray Trouser", price: 20.0 }];
+
+// Function to remove a product from the cart by its id
+function removeFromCart(productId) {
+  // Find the product element and remove it from the DOM
+  const buttonElement = document.querySelector(
+    `button[onclick="removeFromCart(${productId})"]`
+  );
+  const productElement = buttonElement.closest("tr");
+  if (productElement) {
+    productElement.remove();
+  }
+
+  // Update the cart array
+  cart = cart.filter((product) => product.id !== productId);
+  console.log(`Product with id ${productId} has been removed from the cart.`);
+  console.log(cart); // Check the updated cart array
+
+  // Optionally, update the UI here
+  updateCartUI();
+}
+
+// Function to update the UI (example placeholder function)
+function updateCartUI() {
+  // Your code to update the cart UI, e.g., refreshing the cart display
+}
